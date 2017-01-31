@@ -1,0 +1,31 @@
+.category-item {
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid;
+  border-style: groove;;
+  width: 200px;
+}
+
+.items-item {
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid;
+  border-style: groove;;
+  width: 300px;
+}
+
+.menu-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: silver;
+}
+
+.menu-item-active {
+  background-color: grey;
+}
+
+.custom-spinner {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+}
