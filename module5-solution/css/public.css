@@ -183,3 +183,18 @@ h3.menu-item-title {
     width: 100%;
   }
 }
+
+/**************** Black Theme Form *****************/
+.black-theme-form input, button {
+    color: black;
+}
+
+.black-theme-form .ng-touched.ng-invalid {
+  border: 2px red solid;
+}
+
+.black-theme-form .success-message{
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
