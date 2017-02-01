@@ -20,6 +20,10 @@
       }
     }
 
+    userService.getLoggedUser = function () {
+      return userService.loggedUder;
+    }
+
   }
 
 })();

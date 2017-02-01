@@ -13,6 +13,7 @@
     signUpCtrl.register = function () {
       MenuService.getItem(signUpCtrl.registerData.favoriteDish).then(function (result) {
         signUpCtrl.invalidFavoriteDish = false;
+        signUpCtrl.registerData.favoriteDishItem = result;
         UserService.loginUser(signUpCtrl.registerData);
         signUpCtrl.registerOK = true;
       }, function (error) {
