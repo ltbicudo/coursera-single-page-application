@@ -64,6 +64,7 @@
       </div>
       <input type="text" name="favoriteDish" placeholder="Your favorite dish here"
              ng-model="signUpCtrl.registerData.favoriteDish" size="30"
+             ng-blur="signUpCtrl.invalidFavoriteDishCheck();"
              required></input>
       <span ng-if="signUpForm.favoriteDish.$error.required && signUpForm.favoriteDish.$touched">
         Favorite Dish is required
@@ -73,7 +74,7 @@
       </span>
     </div>
     <div class="row">
-      <button ng-disabled="signUpForm.$invalid"
+      <button ng-disabled="signUpForm.$invalid || signUpCtrl.invalidFavoriteDish"
               ng-click="signUpCtrl.register();">Submit</button>
     </div>
   </form>
